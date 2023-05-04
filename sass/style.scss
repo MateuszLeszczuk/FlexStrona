@@ -204,6 +204,29 @@ body {
     }
 }
 
+//HERO-IMG
+
+
+.hero-img {
+    position: relative;
+    padding: 10em 2em;
+    @include utilities.heroImages('../img/hero-img-mini.jpg');
+    text-align: center;
+    color: utilities.$pure-white;
+    overflow: hidden;
+
+    &__title {
+        font-family: 'Dancing Script', cursive;
+        margin-bottom: 0.5em;
+        font-size: 4.8rem;
+
+    }
+
+    &__text {
+        padding: 1em 0;
+    }
+}
+
 
 //MEDIA 
 
@@ -224,11 +247,11 @@ body {
                 }
             }
 
-            &-img{
+            &-img {
                 width: 40%;
 
-                &--right{
-                    order:1;
+                &--right {
+                    order: 1;
                 }
             }
 
@@ -236,7 +259,7 @@ body {
 
         }
 
-        &__img{
+        &__img {
             margin-bottom: 0;
             max-height: 300px;
         }
@@ -265,9 +288,23 @@ body {
         }
     }
 
-    .dreams{
-        &__text{
+    .dreams {
+        &__text {
             font-size: 1.8rem;
+        }
+    }
+
+    .hero-img {
+        padding: 30rem 2em;
+
+        hr {
+            margin: 0 auto;
+            width: 70%;
+
+        }
+
+        &__text {
+            font-size: 2.2rem;
         }
     }
 }
@@ -286,18 +323,18 @@ body {
         }
     }
 
-    .nav{
-        &__item{
+    .nav {
+        &__item {
             font-size: 4.8rem;
         }
     }
 
-    .dreams{
+    .dreams {
 
-        &__box{
+        &__box {
             margin: 5em 0;
 
-            &-text{
+            &-text {
                 display: flex;
                 flex-direction: column;
                 justify-content: flex-end;
@@ -305,13 +342,27 @@ body {
             }
         }
 
-        &__title{
+        &__title {
             font-size: 3.6rem;
         }
 
-        &__text{
+        &__text {
             font-size: 2.2rem;
         }
     }
-}
 
+    .hero-img {
+        padding: 40rem 2em;
+        background-image: utilities.$blue-gradient , url('../img/hero-img-big.jpg');
+
+        &__title {
+            font-size: 7.2rem;
+        }
+
+        hr {
+            width: 60%;
+            max-width: 900px;
+        }
+
+    }
+}
